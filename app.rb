@@ -6,14 +6,14 @@ class App < Sinatra::Base
     erb :newteam
   end
 
-  post '/team' do
+  post '/newteam' do
     @name = params["name"]
     @coach = params["coach"]
     @pg = params["pg"]
     @sg = params["sg"]
-    @pg = params["pf"]
+    @pf = params["pf"]
     @sf = params["sf"]
     @c = params["c"]
     erb :team
   end
-end
+end 
